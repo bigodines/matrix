@@ -17,24 +17,72 @@ const fetchFromFile = () => {
 };
 
 const createRoomFileSync = () => {
-  const roomsData = [];
+  const roomsData = [
+    {
+      id: uuid(),
+      name: "Lobby",
+      disableMeeting: true,
+    },
+    {
+      id: uuid(),
+      name: "Lounge",
+      externalMeetUrl: "https://meet.google.com/sof-bqhr-szg"
+    },
+    {
+      id: uuid(),
+      name: "1:1 A",
+      externalMeetUrl: "https://meet.google.com/ohj-rpuq-vgb"
+    },
+    {
+      id: uuid(),
+      name: "1:1 B",
+      externalMeetUrl: "https://meet.google.com/dpn-ibch-pwq"
+    },
+    {
+      id: uuid(),
+      name: "1:1 C",
+      externalMeetUrl: "https://meet.google.com/yhr-evcy-iqw"
+    },
+    {
+      id: uuid(),
+      name: "Wringley",
+      externalMeetUrl: "https://meet.google.com/zwb-ypyy-ywc"
+    },
+    {
+      id: uuid(),
+      name: "War Room",
+      externalMeetUrl: "https://meet.google.com/ynk-kkbh-tdn"
+    },
+    {
+      id: uuid(),
+      name: "Candlestick",
+      externalMeetUrl: "https://meet.google.com/vjg-eyan-ifc"
+    },
+    {
+      id: uuid(),
+      name: "Kitchen",
+      externalMeetUrl: "https://meet.google.com/igg-qjez-xnc"
+    },
+    {
+      id: uuid(),
+      name: "Engineering",
+      externalMeetUrl: "https://meet.google.com/oic-kamz-apx"
+    },
+  ];
 
-  roomsData[0] = {
-    id: uuid(),
-    name: "The Dock",
-    disableMeeting: true,
-  };
 
   const niceNames = [
-    "Nebuchadnezzar",
-    "Logos",
-    "Osiris",
-    "Icarus",
-    "Caduceus",
-    "Brahma",
-    "Novalis",
-    "Vigilant",
-    "Zion",
+//    "Lounge",
+//    "1:1 A",
+//    "1:1 B",
+//    "1:1 C",
+//    "Wringley",
+//    "Candlestick",
+//    "War Room",
+//    "Jams",
+//    "Coliseum",
+//    "Crystal Ballroom",
+//    "Engineering",
   ];
 
   for (const niceName of niceNames) {
